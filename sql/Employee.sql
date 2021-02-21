@@ -6,7 +6,9 @@ create table Employee
  surname varchar(50),
  age integer,
  salary float,
- primary key(id)
+ departement integer,
+ primary key(id),
+ foreign key(departement) references Departement(idDepartement)
  
 )
 
