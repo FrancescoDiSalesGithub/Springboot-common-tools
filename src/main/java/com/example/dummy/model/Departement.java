@@ -16,9 +16,9 @@ public class Departement
         return IdDepartement;
     }
 
-    public void setIdDepartement()
+    public void setIdDepartement(int idDepartement)
     {
-
+        this.IdDepartement=idDepartement;
     }
 
     public String getName() {

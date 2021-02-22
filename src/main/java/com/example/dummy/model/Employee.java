@@ -8,14 +8,31 @@ import javax.persistence.*;
 public class Employee
 {
     @Id
-    @GeneratedValue(strategy =  GenerationType.AUTO)
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    @Column(name="idEmployee")
     private int idEmployee;
 
+    @Column(name="name")
     private String name;
+    @Column(name="surname")
     private String surname;
-    private int age;
-    private float salary;
 
+    @Column(name="age")
+    private int age;
+    @Column(name = "salary")
+    private int salary;
+
+    @Column(name="departement")
+    private int departement;
+
+
+    public int getDepartement() {
+        return departement;
+    }
+
+    public void setDepartement(int departement) {
+        this.departement = departement;
+    }
 
     public int getIdEmployee() {
         return idEmployee;
@@ -50,11 +67,11 @@ public class Employee
         this.age = age;
     }
 
-    public float getSalary() {
+    public int getSalary() {
         return salary;
     }
 
-    public void setSalary(float salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 }
