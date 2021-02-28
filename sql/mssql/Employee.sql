@@ -1,7 +1,7 @@
 create table Employee
 (
 
- idEmployee integer identity(1,1),
+ id_employee integer identity(1,1),
  name varchar(50),
  surname varchar(50),
  age integer,
