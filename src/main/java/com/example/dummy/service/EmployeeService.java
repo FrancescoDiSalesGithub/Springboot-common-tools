@@ -24,7 +24,10 @@ public class EmployeeService
         return employeeRepository.findAll();
     }
 
-
+    public void deleteEmployee(Employee e)
+    {
+        employeeRepository.delete(e);
+    }
 
 
 

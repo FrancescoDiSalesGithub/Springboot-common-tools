@@ -37,5 +37,11 @@ public class EmployeeController
         return employeeService.findAllEmployee();
     }
 
+    @PostMapping("/employee/delete")
+    public void deleteEmployee(@RequestBody Employee e)
+    {
+        employeeService.deleteEmployee(e);
+    }
+
 
 }
