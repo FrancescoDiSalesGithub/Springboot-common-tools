@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
+import java.util.List;
 
 @Service
 public class EmployeeService
@@ -17,6 +18,14 @@ public class EmployeeService
     {
         employeeRepository.save(employee);
     }
+
+    public List<Employee> findAllEmployee()
+    {
+        return employeeRepository.findAll();
+    }
+
+
+
 
 
 }
