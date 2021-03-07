@@ -32,7 +32,6 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter
     {
         auth.jdbcAuthentication()
                 .dataSource(dataSource)
-                .withDefaultSchema()
                 .withUser(
                         User.withUsername("root")
                         .password("root")

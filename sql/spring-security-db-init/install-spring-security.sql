@@ -1,4 +1,7 @@
 
+
+-- check the property spring.datasource.url and check the database the springboot application is connecting to
+
 BEGIN TRAN
 
 BEGIN TRY
