@@ -7,5 +7,6 @@
 * How to create a HTTP Filter
 * How to create different profiles properties
 * Database Persistence with three famous DBMS: PostgreSQL, MariaDB and Microsoft Sql Server
-* Kafka security
+* Kafka
+* Spring security
 
