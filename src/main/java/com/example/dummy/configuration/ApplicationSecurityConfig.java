@@ -30,6 +30,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter
     @Override
     protected void configure( AuthenticationManagerBuilder auth) throws Exception
     {
+        /*
         auth.jdbcAuthentication()
                 .dataSource(dataSource)
                 .withUser(
@@ -41,7 +42,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter
                         User.withUsername("user")
                         .password("user")
                         .roles("USER")
-                );
+                );*/
 
         auth.inMemoryAuthentication().withUser("root").roles("ADMIN").password(this.getPasswordEncoder().encode("root"));
         auth.inMemoryAuthentication().withUser("user").roles("USER").password(this.getPasswordEncoder().encode("user"));

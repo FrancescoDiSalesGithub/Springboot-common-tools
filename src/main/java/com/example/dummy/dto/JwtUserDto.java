@@ -1,6 +1,6 @@
 package com.example.dummy.dto;
 
-public class JwtUser
+public class JwtUserDto
 {
 
     private String email;
